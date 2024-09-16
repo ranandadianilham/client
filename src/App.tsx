@@ -6,6 +6,7 @@ import ProfilePage from "./pages/Profile";
 import WarrantyPage from "./pages/Warranty";
 import ProductView from "./pages/Dashboard/ProductView";
 import ProductNew from "./pages/Dashboard/ProductNew";
+import ClaimForm from "./pages/Warranty/ClaimForm";
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/product/:id" element={<ProductView />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/warranty" element={<WarrantyPage />} />
+        <Route path="/warranty/new" element={<ClaimForm />} />
       </Routes>
     </>
   );
